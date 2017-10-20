@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Who Wants to Be a Millionaire</string>
+    <string name="New_game">New Game</string>
+    <string name="Scoreboard">Scoreboard</string>
+    <string name="Exit">Exit</string>
+    <string name="Back">Back</string>
+    <string name="Music">Music</string>
+    <string name="Sounds">Sounds</string>
+    <string name="EndGame">End game</string>
+    <string name="back2">Back</string>
+    <string name="Prize1">You won</string>
+    <string name="prize2">$!</string>
+    <string name="Save">Save</string>
+    <string name="ExitWithoutSave">Exit without saving score</string>
+    <string name="EnterName">Enter your name here</string>
+    <string name="AudienceVoices">Audience Voices</string>
+    <string name="hint1">"In my opinion, the answer "</string>
+    <string name="hint2">is correct</string>
+    <string name="hint0">"Your friend: "</string>
+</resources>

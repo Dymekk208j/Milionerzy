@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="pl.damiandziura.milionerzy.activities.MainMenuActivity">
+
+    <Button
+        android:id="@+id/btNewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/question"
+        android:onClick="onNewGameActivity"
+        android:text="@string/New_game"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/btScoreboard"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btScoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/question"
+        android:onClick="onScoreboardActivity"
+        android:text="@string/Scoreboard"
+        android:layout_above="@+id/chMusic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp" />
+
+    <CheckBox
+        android:id="@+id/chSounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="onChangeSettings"
+        android:text="@string/Sounds"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="17dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:id="@+id/chMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:onClick="onChangeSettings"
+        android:text="@string/Music"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@+id/chSounds"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</android.widget.RelativeLayout>

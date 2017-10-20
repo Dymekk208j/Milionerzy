@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="pl.damiandziura.milionerzy.activities.ScoreboardActivity">
+
+    <TextView
+        android:id="@+id/dummyview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/question"
+        android:onClick="onBackActivity"
+        android:text="@string/Back" />
+
+    <ListView
+        android:id="@+id/lvNo"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btBack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+
+        />
+
+    <ListView
+        android:id="@+id/lvPoints"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btBack"
+        android:layout_alignEnd="@+id/dummyview"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/dummyview"
+        android:layout_toRightOf="@+id/lvNo"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+
+        />
+
+    <ListView
+        android:id="@+id/lvNames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/dummyview"
+        android:layout_toEndOf="@+id/dummyview"
+        android:layout_above="@+id/btBack" />
+
+</android.widget.RelativeLayout>

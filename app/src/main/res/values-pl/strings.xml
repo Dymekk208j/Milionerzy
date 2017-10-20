@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Milionerzy</string>
+    <string name="New_game">Nowa gra</string>
+    <string name="Scoreboard">Tablica wyników</string>
+    <string name="Exit">Wyjście</string>
+    <string name="Back">Cofnij</string>
+    <string name="Music">Muzyka</string>
+    <string name="Sounds">Dźwięki</string>
+    <string name="EndGame">Zakończ gre</string>
+    <string name="back2">Wróć</string>
+    <string name="Prize1">"Wygrałeś "</string>
+    <string name="prize2">pln!</string>
+    <string name="Save">Zapisz</string>
+    <string name="ExitWithoutSave">Wyjdź bez zapisywania wyniku</string>
+    <string name="EnterName">Wprowadź swoje imię</string>
+    <string name="AudienceVoices">Głosy widowni</string>
+    <string name="hint1">"Moim zdaniem odpowiedź "</string>
+    <string name="hint2">jest prawidłowa</string>
+    <string name="hint0">"Twój przyjaciel: "</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="pl.damiandziura.milionerzy.activities.OptionsActivity">
+
+    <TextView
+        android:id="@+id/dummyview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btEndGame"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btBack"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/question"
+        android:onClick="onEndGameActivity"
+        android:text="@string/EndGame" />
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/question"
+        android:onClick="onBackActivity"
+        android:text="@string/back2" />
+
+    <CheckBox
+        android:id="@+id/chSounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btEndGame"
+        android:layout_alignEnd="@+id/dummyview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/dummyview"
+        android:layout_marginBottom="43dp"
+        android:checked="true"
+        android:onClick="onChangeSettings"
+        android:text="@string/Sounds"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:id="@+id/chMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/chSounds"
+        android:layout_alignEnd="@+id/chSounds"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/chSounds"
+        android:layout_marginBottom="14dp"
+        android:checked="true"
+        android:onClick="onChangeSettings"
+        android:text="@string/Music"
+        android:textColor="@android:color/background_light" />
+
+</android.widget.RelativeLayout>
